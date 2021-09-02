@@ -1,3 +1,9 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.wordWrap": "on",
+  "prettier.endOfLine": "auto",
+  "prettier.tabWidth": 4
 }

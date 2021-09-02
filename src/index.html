@@ -1,64 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <script src="https://use.fontawesome.com/c628928799.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times"></i>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_page.html">About</a></li>
-          <li><a href="portfolio_page.html">Portfolios</a></li>
-          <li><a href="blog_page.html">Blogs</a></li>
-          <li><a href="contact_page.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section>
-        <article>
-          <h2>Hello, my name is</h2>
-          <h1><strong>Shane Qi</strong></h1>
-          <h3>Web Developer | Mobile App Developer</h3>
-        </article>
-        <article>
-          <a href="contact_page.html">Contact Me</a>
-          <a href="../docs/Shane Qi_Resume.pdf" download>Resume</a>
-        </article>
-      </section>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, iure
-          dicta reiciendis aspernatur excepturi delectus dolorum amet
-          consequuntur beatae sunt itaque a quibusdam sequi iste illum autem
-          eligendi! Saepe, eaque?
-        </p>
-      </section>
-      <section>
-        <img
-          src="/docs/img/portrait.png"
-          alt="shane Qi"
-          width="580"
-          height="600"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap"
+            rel="stylesheet"
         />
-      </section>
-    </main>
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <script src="https://use.fontawesome.com/c628928799.js"></script>
+        <script src="nav.js"></script>
+    </head>
+    <body>
+        <header class="navbar-container">
+            <nav class="navbar">
+                <article class="logo-container">
+                    <i class="fas fa-user logo"></i>
+                    <h2>Shane <span class="surname">Qi</span></h2>
+                </article>
+                <i class="fas fa-bars" id="hamburger" onclick="openNav()"></i>
+                <ul id="sidePanel" class="sidePanel">
+                    <li class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-times" id="closeIcon"></i>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="portfolio_page.html">Portfolios</a></li>
+                    <li><a href="blog_page.html">Blogs</a></li>
+                    <li><a href="contact_page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <footer>Copyright &copy; <em>2021 All Right Reserved By Shane</em></footer>
-  </body>
+        <main>
+            <section class="home-hero">
+                <section>
+                    <article class="home-hero-component">
+                        <h1>Hello, my name is</h1>
+                        <h2>Shane <span>Qi</span></h2>
+                        <article class="home-icons">
+                            <a href="https://github.com/shaneqi72">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/shane-qi-39496b212/"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </article>
+                        <h3>Web Developer | Mobile App Developer</h3>
+                        <article class="home-btn">
+                            <a class="btn" href="contact_page.html">Contact</a>
+                            <a
+                                class="btn"
+                                href="../docs/Shane_Qi_Resume.pdf"
+                                download
+                                >Resume</a
+                            >
+                        </article>
+                    </article>
+                </section>
+            </section>
+
+            <section class="intro">
+                <article>
+                    <h1>I'm a Passionate Web & Mobile App Developer</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias excepturi vitae, fugiat ullam debitis repellat
+                        expedita perspiciatis dicta magnam illo.
+                    </p>
+                </article>
+
+                <img
+                    src="../docs/img/portrait.png"
+                    alt="portrait"
+                    class="portait"
+                />
+            </section>
+        </main>
+
+        <footer>
+            Copyright &copy; <em>2021 All Right Reserved By Shane</em>
+        </footer>
+    </body>
 </html>

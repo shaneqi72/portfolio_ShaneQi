@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css" type="text/css" />
   <link
       rel="stylesheet"
@@ -17,6 +20,54 @@
   </head>
 </head>
 <body>
-  
+    <header>
+      <nav>
+        <article>
+          <i class="fas fa-user logo"></i>
+          <h2>Shane Qi</h2>
+        </article>
+        <i class="fas fa-bars"></i>
+        <ul id="sidePanel" class="sidePanel">
+          <li class="closebtn" onclick="closeNav()">
+            <i class="fas fa-times"></i>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_page.html">About</a></li>
+          <li><a href="portfolio_page.html">Portfolios</a></li>
+          <li><a href="blog_page.html">Blogs</a></li>
+          <li><a href="contact_page.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <header><h1>Get In Touch</h1></header>
+      <section>
+        <i class="far fa-address-card"></i>
+        <p>21 Manning Street, Milton</p>
+      </section>
+      <section>
+        <i class="fas fa-phone-square-alt"></i>
+        <p>0424770874</p>
+      </section>
+      <section>
+        <i class="fas fa-envelope-square"></i>
+        <p>shane_qi@hotmail.com</p>
+      </section>
+      <section>
+        <form action="">
+          <label for="message">
+            Message:
+          </label>
+          <textarea name="massage" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Submit"/>
+        </form>
+    
+      </section>
+
+    </main>
+
+    <footer>
+      Copyright &copy; <em>2021 All Right Reserved By Shane</em>
+    </footer>
 </body>
 </html>

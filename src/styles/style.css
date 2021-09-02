@@ -1,3 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
 
+body {
+  background-color: #e6e6e6;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-container {
+  height: 70px;
+  margin-bottom: 2px;
+  display: flex;
+}
+.navbar-container #hamburger {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  color: #1f1f1f;
+  font-size: 35px;
+}
+.navbar-container #hamburger:hover {
+  color: #e38443;
+}
+.navbar-container .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.navbar-container .surname {
+  color: #e38443;
+  font-weight: bold;
+}
+.navbar-container .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-container .navbar #closeIcon {
+  font-size: 45px;
+}
+.navbar-container .navbar .logo {
+  color: #e38443;
+  font-size: 40px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.home-hero {
+  background: url("../../docs//img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  position: relative;
+  width: auto;
+}
+.home-hero .home-hero-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-hero .home-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+.home-hero .home-icons a {
+  background: none;
+  box-shadow: none;
+}
+.home-hero .home-icons a i {
+  padding: 10px;
+  font-size: 25px;
+  color: #e6e6e6;
+  text-align: center;
+}
+.home-hero h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.home-hero h2 {
+  color: #e38443;
+}
+.home-hero h1:nth-child(2) {
+  text-align: center;
+}
+.home-hero h3 {
+  margin: 40px auto;
+}
+.home-hero article {
+  color: #f7f1f1;
+  text-align: center;
+}
+.home-hero article a {
+  background: #e38443;
+  color: #1f1f1f;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #212020;
+}
+.home-hero section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: #f7f1f1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro {
+  display: flex;
+  margin: 30px 10px;
+  flex-direction: column;
+}
+.intro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: 481px) {
+  .home-hero {
+    height: 50vh;
+  }
+
+  .home-icons a i:hover {
+    color: #e38443;
+  }
+
+  .intro {
+    flex-direction: row;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .navbar .sidePanel {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .navbar .sidePanel li {
+    margin-right: 50px;
+  }
+  .navbar .sidePanel li a {
+    color: #1f1f1f;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .navbar .sidePanel li a:hover {
+    color: #e38443;
+  }
+  .navbar .sidePanel .closebtn {
+    display: none;
+  }
+  .navbar #hamburger {
+    display: none;
+  }
+
+  .navbar-container .logo-container {
+    position: relative;
+  }
+}
+@media (min-width: 481px) and (max-width: 960px) {
+  .navbar .sidePanel li {
+    margin-right: 10px;
+    text-align: right;
+  }
+  .navbar .sidePanel li a {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .sidePanel {
+    display: none;
+    flex-direction: column;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    z-index: 50;
+    top: 20px;
+    right: 20px;
+  }
+  .sidePanel li {
+    padding: 5px;
+  }
+  .sidePanel li a {
+    color: #e38443;
+  }
+  .sidePanel .closebtn {
+    align-self: flex-end;
+    position: relative;
+    top: 8px;
+    right: 8px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
