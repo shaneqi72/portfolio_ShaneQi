@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', 'Roboto', sans-serif;
+}
+
+$main-bc: #e6e6e6;
+$parimary-font-color: #1f1f1f;
+$secondary-font-color: rgb(247, 241, 241);
+$primary-color: #e38443;
+
+@mixin section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    article {
+        text-align: center;
+    }
+}
+
+@mixin primary-button {
+    background: $primary-color;
+    color: $parimary-font-color;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #212020;
+}
+
+P {
+    margin-top: 10px;
+}
+
+.about_me_section {
+    @include section;
+    h3 {
+        margin: 15px auto;
+    }
+    p {
+        margin: 15px auto;
+    }
+    .contact_btn {
+        @include primary-button;
+        margin-top: 10px;
+    }
+}
+
+.what_i_do_section {
+    @include section;
+    article {
+        margin-top: 15px;
+        i {
+            font-size: xx-large;
+            margin: 10px;
+        }
+    }
+}
+
+.skills_section {
+    @include section;
+    .icon_group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        .html {
+            color: #e34f26;
+        }
+        .css {
+            color: #2965f1;
+        }
+        .js {
+            color: #f0db4f;
+        }
+        .node {
+            color: #3c873a;
+        }
+        .node-js {
+            color: #323330;
+        }
+        .react {
+            color: #61dbfb;
+        }
+        .git {
+            color: #f34f29;
+        }
+        .git-hub {
+            color: #3d2d00;
+        }
+        .npm {
+            color: #cc3534;
+        }
+        .bootstrap {
+            color: #563d7c;
+        }
+        .database {
+            color: #427bf5;
+        }
+        i {
+            padding: 8px;
+        }
+    }
+}
+
+.hobbies_section {
+    @include section;
+    .hobbies {
+        display: grid;
+        width: auto;
+        margin: 20px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        figure {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            font-size: 20px;
+            figcaption {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) {
+    .hobbies_section {
+        .hobbies {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}

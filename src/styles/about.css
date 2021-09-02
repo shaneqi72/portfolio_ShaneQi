@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", "Roboto", sans-serif;
+}
+
+P {
+  margin-top: 10px;
+}
+
+.about_me_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.about_me_section article {
+  text-align: center;
+}
+.about_me_section h3 {
+  margin: 15px auto;
+}
+.about_me_section p {
+  margin: 15px auto;
+}
+.about_me_section .contact_btn {
+  background: #e38443;
+  color: #1f1f1f;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #212020;
+  margin-top: 10px;
+}
+
+.what_i_do_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.what_i_do_section article {
+  text-align: center;
+}
+.what_i_do_section article {
+  margin-top: 15px;
+}
+.what_i_do_section article i {
+  font-size: xx-large;
+  margin: 10px;
+}
+
+.skills_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.skills_section article {
+  text-align: center;
+}
+.skills_section .icon_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.skills_section .icon_group .html {
+  color: #e34f26;
+}
+.skills_section .icon_group .css {
+  color: #2965f1;
+}
+.skills_section .icon_group .js {
+  color: #f0db4f;
+}
+.skills_section .icon_group .node {
+  color: #3c873a;
+}
+.skills_section .icon_group .node-js {
+  color: #323330;
+}
+.skills_section .icon_group .react {
+  color: #61dbfb;
+}
+.skills_section .icon_group .git {
+  color: #f34f29;
+}
+.skills_section .icon_group .git-hub {
+  color: #3d2d00;
+}
+.skills_section .icon_group .npm {
+  color: #cc3534;
+}
+.skills_section .icon_group .bootstrap {
+  color: #563d7c;
+}
+.skills_section .icon_group .database {
+  color: #427bf5;
+}
+.skills_section .icon_group i {
+  padding: 8px;
+}
+
+.hobbies_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.hobbies_section article {
+  text-align: center;
+}
+.hobbies_section .hobbies {
+  display: grid;
+  width: auto;
+  margin: 20px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.hobbies_section .hobbies figure {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+.hobbies_section .hobbies figure figcaption {
+  font-size: 20px;
+}
+
+@media (min-width: 481px) {
+  .hobbies_section .hobbies {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

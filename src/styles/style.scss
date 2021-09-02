@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', 'Roboto', sans-serif;
 }
 
 $main-bc: #e6e6e6;
@@ -11,7 +11,14 @@ $secondary-font-color: rgb(247, 241, 241);
 $primary-color: #e38443;
 
 @mixin primary-button {
-    background-color: $primary-color;
+    background: $primary-color;
+    color: $parimary-font-color;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #212020;
 }
 
 body {
@@ -114,14 +121,7 @@ li {
         color: $secondary-font-color;
         text-align: center;
         a {
-            background: $primary-color;
-            color: $parimary-font-color;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            border-radius: 10px;
-            font-weight: bold;
-            border: 1px solid black;
-            box-shadow: 2px 2px 2px #212020;
+            @include primary-button;
         }
     }
     section {
