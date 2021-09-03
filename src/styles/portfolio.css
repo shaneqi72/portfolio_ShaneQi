@@ -1,0 +1,53 @@
+/* cards component projects */
+body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+body .portfolio-cards {
+  margin: 20px auto;
+}
+body main {
+  margin-top: 40px;
+}
+
+header {
+  text-align: center;
+  margin: 10px;
+}
+
+/* desktop and tablet screen shares styles */
+@media only screen and (min-width: 481px) {
+  body .portfolio-cards {
+    margin: 30px;
+  }
+
+  footer {
+    margin-top: 400px;
+  }
+
+  .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 400px;
+  }
+}
+/* desktop screen */
+@media only screen and (min-width: 961px) {
+  body .portfolio-cards {
+    margin: 50px;
+  }
+  body figure {
+    width: 400px;
+  }
+  body figure img {
+    height: 400px;
+  }
+}
+
+/*# sourceMappingURL=portfolio.css.map */

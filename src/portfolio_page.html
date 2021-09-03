@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <script src="https://use.fontawesome.com/c628928799.js"></script>
-  </head>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <article>
-          <i class="fas fa-user"></i>
-          <h2>Shane Qi</h2>
-        </article>
-        <i class="fas fa-bars"></i>
-        <ul id="sidePanel" class="sidePanel">
-          <li class="closebtn" onclick="closeNav()">
-            <i class="fas fa-times"></i>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_page.html">About</a></li>
-          <li><a href="portfolio_page.html">Portfolios</a></li>
-          <li><a href="blog_page.html">Blogs</a></li>
-          <li><a href="contact_page.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <header><h1>My Portfolio</h1></header>
-      <figure>
-        <img src="../docs/img/portfolio_bible_learning.jpg" alt="Bible Learning Project">
-        <figcaption>Bible Learning Website</figcaption>
-      </figure>
-      <figure>
-        <img src="../docs/img/portfolio_movie.jpg" alt="Movie Website">
-        <figcaption>Movie Website</figcaption>
-      </figure>
-      <figure>
-        <img src="../docs/img/portfolio_dating.jpg" alt="Dating Application">
-        <figcaption>Dating Application</figcaption>
-      </figure>
-      <figure>
-        <img src="../docs/img/portfolio_brisbane.jpg" alt="Brisbane">
-        <figcaption>Brisbane Website</figcaption>
-      </figure>
-    </main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+        <link rel="stylesheet" href="styles/portfolio.css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <script src="https://use.fontawesome.com/c628928799.js"></script>
+        <script src="nav.js"></script>
+    </head>
 
-    <footer>Copyright &copy; <em>2021 All Right Reserved By Shane</em></footer>
-  </body>
+    <body>
+        <!-- navbar -->
+        <header class="navbar-container">
+            <nav class="navbar">
+                <article class="logo-container">
+                    <i class="fas fa-user logo"></i>
+                    <h2>Shane <span class="surname">Qi</span></h2>
+                </article>
+                <i class="fas fa-bars" id="hamburger" onclick="openNav()"></i>
+                <ul id="sidePanel" class="sidePanel">
+                    <li class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-times" id="closeIcon"></i>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="portfolio_page.html">Portfolios</a></li>
+                    <li><a href="blog_page.html">Blogs</a></li>
+                    <li><a href="contact_page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main section -->
+        <main>
+            <!-- header -->
+            <header class="title"><h1>My Portfolio</h1></header>
+            <!-- projects section and card components -->
+            <div class="portfolio-cards">
+                <figure>
+                    <img
+                        src="../docs/img/portfolio_bible_learning.jpg"
+                        alt="Bible Learning Project"
+                    />
+                    <figcaption>Bible Learning Website</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="../docs/img/portfolio_movie.jpg"
+                        alt="Movie Website"
+                    />
+                    <figcaption>Movie Website</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="../docs/img/portfolio_dating.jpg"
+                        alt="Dating Application"
+                    />
+                    <figcaption>Dating Application</figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="../docs/img/portfolio_brisbane.jpg"
+                        alt="Brisbane"
+                    />
+                    <figcaption>Brisbane Website</figcaption>
+                </figure>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer>
+            Copyright &copy; <em>2021 All Right Reserved By Shane</em>
+        </footer>
+    </body>
 </html>

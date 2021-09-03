@@ -1,0 +1,56 @@
+$main-bc: #e6e6e6;
+$parimary-font-color: #1f1f1f;
+$secondary-font-color: rgb(247, 241, 241);
+$primary-color: #e09a6c;
+/* cards component projects */
+body {
+    background-color: $main-bc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    .portfolio-cards {
+        margin: 20px auto;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+}
+
+header {
+    text-align: center;
+    margin: 10px;
+}
+/* desktop and tablet screen shares styles */
+@media only screen and (min-width: 481px) {
+    body {
+        .portfolio-cards {
+            margin: 30px;
+        }
+    }
+    footer {
+        margin-top: 400px;
+    }
+    .portfolio-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figure {
+        width: 400px;
+    }
+}
+/* desktop screen */
+@media only screen and (min-width: 961px) {
+    body {
+        .portfolio-cards {
+            margin: 50px;
+        }
+        figure {
+            width: 400px;
+            img {
+                height: 400px;
+            }
+        }
+    }
+}
