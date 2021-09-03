@@ -1,114 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css" type="text/css" />
-  <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <script src="https://use.fontawesome.com/c628928799.js"></script>
-  </head>
-</head>
-<body>
-  <header>
-      <nav>
-        <article>
-          <i class="fas fa-user logo"></i>
-          <h2>Shane Qi</h2>
-        </article>
-        <i class="fas fa-bars"></i>
-        <ul id="sidePanel" class="sidePanel">
-          <li class="closebtn" onclick="closeNav()">
-            <i class="fas fa-times"></i>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_page.html">About</a></li>
-          <li><a href="portfolio_page.html">Portfolios</a></li>
-          <li><a href="blog_page.html">Blogs</a></li>
-          <li><a href="contact_page.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <header><h1>Blogs</h1></header>
-      <figure>
-        <img src="../docs//img/blog1.jpg" alt="Apple Desktop Equipments">
-        <figcaption>
-          <article>
-          <i class="fas fa-pen"></i>
-          <p>David Lee</p>
-          <p>Apple Desktop Equipments</p>
-          <p><em>2021-08-30</em></p>
-          </article>
-          <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque molestiae repellat et hic enim ipsam. Labore molestiae iure deleniti.
-          </article>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/style.css" type="text/css" />
+        <link rel="stylesheet" href="styles/blog.css" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <script src="https://use.fontawesome.com/c628928799.js"></script>
+        <script src="nav.js"></script>
+        <script defer src="blog.js"></script>
+    </head>
 
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="../docs//img/blog2.jpg" alt="Minimal Desktop">
-        <figcaption>
-          <article>
-            <i class="fas fa-pen"></i>
-            <p>Tim Antony</p>
-            <p>Minimal Desktop</p>
-            <p><em>2021-08-29</em></p>
-          </article>
-          <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, officiis placeat. Minus omnis id voluptate maiores est, ratione necessitatibus eveniet.</p>
-          </article>
-        </figcaption>
-      </figure>
-        <figure>
-        <img src="../docs//img/blog3.jpg" alt="Touching Nature">
-        <figcaption>
-          <article>
-            <i class="fas fa-pen"></i>
-            <p>Touching Nature</p>
-            <p><em>2021-08-28</em></p>
-          </article>
-          <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, officiis placeat. Minus omnis id voluptate maiores est, ratione necessitatibus eveniet.</p>
-          </article>
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="../docs//img/blog4.jpg" alt="Centeral Australia">
-        <figcaption>
-          <article>
-            <i class="fas fa-pen"></i>           
-            <p>David Lee</p>
-            <p><em>2021-08-27</em></p>
-          </article>
-          <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, officiis placeat. Minus omnis id voluptate maiores est, ratione necessitatibus eveniet.</p>
-          </article>
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="../docs//img/blog5.jpg" alt="React Technology">
-        <figcaption>
-          <article>
-            <i class="fas fa-pen"></i>
-            <p>David Lee</p>
-            <p>React Technology</p>
-            <p><em>2021-08-26</em></p>
-          </article>
-          <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, officiis placeat. Minus omnis id voluptate maiores est, ratione necessitatibus eveniet.</p>
-          </article>
-        </figcaption>
-      </figure>
-    </main>
-</body>
+    <body>
+        <!-- navbar -->
+        <header class="navbar-container">
+            <nav class="navbar">
+                <article class="logo-container">
+                    <i class="fas fa-user logo"></i>
+                    <h2>Shane <span class="surname">Qi</span></h2>
+                </article>
+                <i class="fas fa-bars" id="hamburger" onclick="openNav()"></i>
+                <ul id="sidePanel" class="sidePanel">
+                    <li class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-times" id="closeIcon"></i>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="portfolio_page.html">Portfolios</a></li>
+                    <li><a href="blog_page.html">Blogs</a></li>
+                    <li><a href="contact_page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main section -->
+        <main>
+            <!-- header -->
+            <header><h1>Blogs</h1></header>
+            <!-- Blogs section and card components -->
+            <div id="modal" style="display: none">
+                <article class="modal-content">
+                    <span id="close"><i class="fas fa-times"></i></span>
+                    <h1>Blog Title</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nisi incidunt ullam exercitationem esse debitis,
+                        praesentium inventore, repellat dolor sed dignissimos
+                        reiciendis ipsa rem totam deserunt ratione non excepturi
+                        dolores porro iste minima soluta reprehenderit. Debitis
+                        perferendis distinctio cupiditate voluptatum quae.
+                    </p>
+                </article>
+            </div>
+            <div class="blogs">
+                <figure>
+                    <img
+                        src="../docs//img/blog1.jpg"
+                        alt="Apple Desktop Equipments"
+                    />
+                    <figcaption>
+                        <article>
+                            <div class="blog-fl">
+                                <div class="blog-author">
+                                    <i class="fas fa-pen"></i>
+                                    <p>David Lee</p>
+                                </div>
+                                <p><em>2021-08-30</em></p>
+                            </div>
+                            <h4>Apple Desktop Equipments</h4>
+                        </article>
+                        <article class="each-modal-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum odio, debitis corrupti dolores
+                            totam sit mollitia voluptatibus ut eum
+                            necessitatibus molestias, minima libero laborum
+                            facere, dignissimos ab modi laudantium alias.
+                        </article>
+                        <button class="open-modal">Read More</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../docs//img/blog2.jpg" alt="Minimal Desktop" />
+                    <figcaption>
+                        <article>
+                            <div class="blog-fl">
+                                <div class="blog-author">
+                                    <i class="fas fa-pen"></i>
+                                    <p>Tim Antony</p>
+                                </div>
+                                <p><em>2021-08-29</em></p>
+                            </div>
+                            <h4>Minimal Desktop</h4>
+                        </article>
+                        <article class="each-modal-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Molestias repellendus, autem assumenda, illo
+                            sunt distinctio error corrupti voluptate enim
+                            veritatis, commodi non. Architecto autem eaque
+                            laborum consequatur distinctio nesciunt! Eos.
+                        </article>
+                        <button class="open-modal">Read More</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../docs//img/blog3.jpg" alt="Touching Nature" />
+                    <figcaption>
+                        <article>
+                            <div class="blog-fl">
+                                <div class="blog-author">
+                                    <i class="fas fa-pen"></i>
+                                    <p>Jin Lee</p>
+                                </div>
+                                <p><em>2021-08-28</em></p>
+                            </div>
+                            <h4>Touching Nature</h4>
+                        </article>
+                        <article class="each-modal-content">
+                            Loremdfsfgsdfg ipsum dolor sit amet consectetur
+                            adipisicing elit. Iusto dolore soluta nihil quo
+                            dolor. Molestias, voluptate pariatur doloremque
+                            eveniet numquam nulla ab aperiam sapiente excepturi.
+                            Ex dolor ipsum architecto veritatis!
+                        </article>
+                        <button class="open-modal">Read More</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img
+                        src="../docs//img/blog4.jpg"
+                        alt="Centeral Australia"
+                    />
+                    <figcaption>
+                        <article>
+                            <div class="blog-fl">
+                                <div class="blog-author">
+                                    <i class="fas fa-pen"></i>
+                                    <p>David Lee</p>
+                                </div>
+                                <p><em>2021-08-27</em></p>
+                            </div>
+                            <h4>Australian Centeral</h4>
+                        </article>
+                        <article class="each-modal-content">
+                            Lorasdfasdfem ipsum dolor sit amet consectetur
+                            adipisicing elit. Quaerat labore a magnam earum, eum
+                            expedita accusantium harum voluptates autem
+                            molestias incidunt repellat ea! Beatae similique
+                            illum optio nisi expedita? Similique.
+                        </article>
+                        <button class="open-modal">Read More</button>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="../docs//img/blog5.jpg" alt="React Technology" />
+                    <figcaption>
+                        <article>
+                            <div class="blog-fl">
+                                <div class="blog-author">
+                                    <i class="fas fa-pen"></i>
+                                    <p>David Lee</p>
+                                </div>
+                                <p><em>2021-08-26</em></p>
+                            </div>
+                            <p>React Technology</p>
+                        </article>
+                        <article class="each-modal-content">
+                            Loremsdfg ipsum dolor sit, amet consectetur
+                            adipisicing elit. Vitae esse dolores quam aliquid,
+                            sunt officia debitis officiis quod. Vitae,
+                            repellendus in! Placeat mollitia odio doloribus
+                            facilis magnam nobis quibusdam voluptatum!
+                        </article>
+                        <button class="open-modal">Read More</button>
+                    </figcaption>
+                </figure>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer>
+            Copyright &copy; <em>2021 All Right Reserved By Shane</em>
+        </footer>
+    </body>
 </html>
