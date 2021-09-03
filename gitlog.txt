@@ -1,3 +1,15 @@
+commit 91284c20d4c1f922f368a10b90a15d9ba6f3c9ba
+Author: shane <shane_qi@hotmail.com>
+Date:   Sat Sep 4 09:06:45 2021 +1000
+
+    add link url to readme.md
+
+commit 0b9d6c7314d4d65ab4904b383f257c9b7d092c15
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 23:21:16 2021 +1000
+
+    print gitlog to gitlog.txt
+
 commit 56e488b84d89958b7cae6e97d06886fbea31fc27
 Author: shane <shane_qi@hotmail.com>
 Date:   Fri Sep 3 23:18:01 2021 +1000
