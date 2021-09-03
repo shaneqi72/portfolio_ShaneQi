@@ -1,0 +1,143 @@
+commit 56e488b84d89958b7cae6e97d06886fbea31fc27
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 23:18:01 2021 +1000
+
+    add sri keys
+
+commit d27237f6633ab0d815126504353207059fe6c544
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:53:53 2021 +1000
+
+    updating button margin and padding
+
+commit b1f5419ae2ca31a847edd66fcc768015db9dec98
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:09:59 2021 +1000
+
+    update scss file and make comments on html
+
+commit cedf3ff628eff7237b27cae70ef644af654a3b9d
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:08:36 2021 +1000
+
+    updating responsive screen and side bar menu
+
+commit abdf3065cf07c3cc153a1e2f16fc2d470439430a
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:07:29 2021 +1000
+
+    update contact html
+
+commit 501f60ef41a8c694f66ee837fb499ac77b698cbf
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:06:09 2021 +1000
+
+    add blog page html js and styles
+
+commit 79e5d820028f4339bf4b49f6500529dd22666cc7
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:05:01 2021 +1000
+
+    new variables file for scss
+
+commit fde6fcfcd40c919d02e3623371b23e58cd9a3214
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:04:28 2021 +1000
+
+    update contact scss
+
+commit f77266a11bcb1bf7b3bf83f52bd3457b55024ca7
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:03:25 2021 +1000
+
+    delete home.scss and css files no use
+
+commit c3c9489be0dae906cb1964eeaffdd1897ae01e03
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:03:01 2021 +1000
+
+    delete home.css
+
+commit c7da3db457785306e3c7b856e7bb8409e98ff59b
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 22:02:26 2021 +1000
+
+    about page, add comments on scss and html
+
+commit 92cd606b219606669dc796e6d3b7ce1e0b301e81
+Author: shane <shane_qi@hotmail.com>
+Date:   Fri Sep 3 21:41:03 2021 +1000
+
+    upload site map and resume
+
+commit e3b5eecb88baca608c70a58da3bcf9e51b753d26
+Author: shane <shane_qi@hotmail.com>
+Date:   Thu Sep 2 16:13:20 2021 +1000
+
+    updating about page
+
+commit 7c955bdf441ca2d2fe0d4415478dd337f5f8c1a7
+Author: shane <shane_qi@hotmail.com>
+Date:   Thu Sep 2 13:59:56 2021 +1000
+
+    update home page with nav hero
+
+commit 436538e8efcf376c220a23ae24329a0c0b596ea8
+Author: shane <shane_qi@hotmail.com>
+Date:   Thu Sep 2 13:58:48 2021 +1000
+
+    rename file without space
+
+commit 1b20a9dadd57d558cdee18b9544af6f8780c5246
+Author: shane <shane_qi@hotmail.com>
+Date:   Thu Sep 2 13:57:40 2021 +1000
+
+    upload images
+
+commit f5d5f389cdf555c35c461650ca0a8cf9fde7a0fc
+Author: shane <shane_qi@hotmail.com>
+Date:   Mon Aug 30 13:31:25 2021 +1000
+
+    upload resume
+
+commit b2266dcee75341c9c6239d938ffc47ff979ddcf6
+Author: shane <shane_qi@hotmail.com>
+Date:   Mon Aug 30 13:31:15 2021 +1000
+
+    add body on about page
+
+commit 2f5ba3a7517d195465cab906550dc45b7c532f33
+Author: shane <shane_qi@hotmail.com>
+Date:   Mon Aug 30 13:30:08 2021 +1000
+
+    add on footer
+
+commit 17901496bdd63c05ee3c2957ad474423d03bee0e
+Author: shane <shane_qi@hotmail.com>
+Date:   Mon Aug 30 08:43:33 2021 +1000
+
+    add images to docs folder
+
+commit 7d0907a46ad7f3dc776ac6bcd78e01d5158a3108
+Author: shane <shane_qi@hotmail.com>
+Date:   Mon Aug 30 08:42:55 2021 +1000
+
+    updating index.html
+
+commit a3c08facb164a5106a3e569f886bfaa8bb4575fa
+Author: shane <shane_qi@hotmail.com>
+Date:   Sun Aug 29 15:21:45 2021 +1000
+
+    set up five pages html, upload hero and portait images, update index.html
+
+commit 0a41b61a35cf9279265f67e9ceb88756801945c9
+Author: shane <shane_qi@hotmail.com>
+Date:   Sat Aug 28 07:06:13 2021 +1000
+
+    create sass
+
+commit 41cc513ea4aa5c90e99a6d4e8df4985bc4aec100
+Author: shane <shane_qi@hotmail.com>
+Date:   Sat Aug 28 06:53:08 2021 +1000
+
+    first commit. Add on structed folders
