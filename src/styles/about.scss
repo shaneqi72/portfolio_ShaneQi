@@ -1,14 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', 'Roboto', sans-serif;
-}
-
 $main-bc: #e6e6e6;
 $parimary-font-color: #1f1f1f;
 $secondary-font-color: rgb(247, 241, 241);
-$primary-color: #e38443;
+$primary-color: #e09a6c;
 
 @mixin section {
     display: flex;
@@ -16,7 +9,7 @@ $primary-color: #e38443;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    article {
+    div {
         text-align: center;
     }
 }
@@ -35,7 +28,7 @@ $primary-color: #e38443;
 P {
     margin-top: 10px;
 }
-
+/*  about me section */
 .about_me_section {
     @include section;
     h3 {
@@ -49,18 +42,18 @@ P {
         margin-top: 10px;
     }
 }
-
+/* what i do section */
 .what_i_do_section {
     @include section;
-    article {
+    .each_container {
         margin-top: 15px;
         i {
-            font-size: xx-large;
+            font-size: 50px;
             margin: 10px;
         }
     }
 }
-
+/* skills section*/
 .skills_section {
     @include section;
     .icon_group {
@@ -107,31 +100,98 @@ P {
         }
     }
 }
-
+/* hobbies sectino */
 .hobbies_section {
     @include section;
     .hobbies {
         display: grid;
         width: auto;
         margin: 20px auto;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(10px, 1fr));
         grid-gap: 5px;
         figure {
-            height: 100px;
+            height: 60px;
             width: 100px;
             text-align: center;
             font-size: 20px;
+            &:hover {
+                color: $primary-color;
+            }
             figcaption {
-                font-size: 20px;
+                font-size: 15px;
             }
         }
     }
 }
-
-@media (min-width: 481px) {
+/* tablet screen */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 20px;
+    }
     .hobbies_section {
         .hobbies {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, minmax(30px, 1fr));
+            grid-gap: 8px;
+            figure {
+                height: 70px;
+                width: 120px;
+                font-size: 25px;
+                figcaption {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+/* desktop screen */
+@media only screen and (min-width: 961px) {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 22px;
+    }
+    .what_i_do_section {
+        .each_container {
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .each_title {
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .hobbies_section {
+        .hobbies {
+            grid-gap: 10px;
+            figure {
+                height: 80px;
+                width: 120px;
+                font-size: 30px;
+                figcaption {
+                    font-size: 22px;
+                }
+            }
         }
     }
 }
