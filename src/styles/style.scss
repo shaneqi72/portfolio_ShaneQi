@@ -1,14 +1,14 @@
+/* change default style */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', 'Roboto', sans-serif;
 }
-
 $main-bc: #e6e6e6;
 $parimary-font-color: #1f1f1f;
 $secondary-font-color: rgb(247, 241, 241);
-$primary-color: #e38443;
+$primary-color: #e09a6c;
 
 @mixin primary-button {
     background: $primary-color;
@@ -19,10 +19,43 @@ $primary-color: #e38443;
     font-weight: bold;
     border: 1px solid black;
     box-shadow: 2px 2px 2px #212020;
+    &:hover {
+        background-color: $parimary-font-color;
+        color: $main-bc;
+    }
 }
 
 body {
     background-color: $main-bc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .portfolio-cards {
+        margin: 200px auto;
+    }
+    figure {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 300px;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 8px;
+        transition: 0.5s transform linear;
+        &:hover {
+            transform: scale(1.05);
+            overflow: hidden;
+        }
+        img {
+            height: 300px;
+            width: 100%;
+            display: inline-block;
+            border-radius: 8px 8px 0 0;
+        }
+        figcaption {
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
 }
 
 a {
@@ -32,7 +65,7 @@ a {
 li {
     list-style: none;
 }
-
+/* navbar*/
 .navbar-container {
     height: 70px;
     margin-bottom: 2px;
@@ -53,8 +86,6 @@ li {
         justify-content: center;
         align-items: center;
         position: absolute;
-        //     top: -40px;
-        //     left: 8px;
     }
     .surname {
         color: $primary-color;
@@ -63,6 +94,7 @@ li {
     .navbar {
         display: flex;
         justify-content: space-between;
+
         #closeIcon {
             font-size: 45px;
         }
@@ -74,7 +106,7 @@ li {
         }
     }
 }
-
+/* hero section */
 .home-hero {
     background: url('../../docs//img/hero.jpg');
     background-repeat: no-repeat;
@@ -83,12 +115,17 @@ li {
     height: 100vh;
     position: relative;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .home-hero-component {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 50px;
     }
     .home-icons {
         text-align: center;
@@ -105,7 +142,6 @@ li {
         }
     }
     h1 {
-        font-size: 30px;
         text-align: center;
     }
     h2 {
@@ -124,7 +160,7 @@ li {
             @include primary-button;
         }
     }
-    section {
+    .container {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -139,6 +175,7 @@ li {
     }
 }
 
+/* intro and photo*/
 .intro {
     display: flex;
     margin: 30px 10px;
@@ -164,6 +201,8 @@ footer {
     .home-icons {
         a {
             i {
+                font-size: 50px;
+                padding: 20px;
                 &:hover {
                     color: $primary-color;
                 }
@@ -183,6 +222,9 @@ footer {
             justify-content: center;
             align-items: center;
             flex-direction: row;
+            &:active {
+                color: $primary-color;
+            }
             li {
                 margin-right: 50px;
 
@@ -209,8 +251,17 @@ footer {
         }
     }
 }
-
-@media (min-width: 481px) and (max-width: 960px) {
+/* tablet screen */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
     .navbar {
         .sidePanel {
             li {
@@ -227,21 +278,45 @@ footer {
         font-size: 18px;
     }
 }
-
-@media (max-width: 480px) {
+/* desktop screen */
+@media only screen and (min-width: 960px) {
+    footer {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+/* mobile screen side menu*/
+@media only screen and (max-width: 480px) {
     .sidePanel {
         display: none;
+        background-color: $parimary-font-color;
+        color: $main-bc;
         flex-direction: column;
-        width: 100px;
-        height: 200px;
+        width: 200px;
+        height: 400px;
         position: absolute;
         z-index: 50;
         top: 20px;
         right: 20px;
         li {
             padding: 5px;
-
+            margin: 5px 15px;
             a {
+                font-size: 18px;
+                color: $main-bc;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            &:hover {
                 color: $primary-color;
             }
         }

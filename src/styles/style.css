@@ -1,3 +1,4 @@
+/* change default style */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,34 @@
 
 body {
   background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .portfolio-cards {
+  margin: 200px auto;
+}
+body figure {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.5s transform linear;
+}
+body figure:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+body figure img {
+  height: 300px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 8px 8px 0 0;
+}
+body figure figcaption {
+  font-size: 20px;
+  padding: 10px;
 }
 
 a {
@@ -17,6 +46,7 @@ li {
   list-style: none;
 }
 
+/* navbar*/
 .navbar-container {
   height: 70px;
   margin-bottom: 2px;
@@ -30,7 +60,7 @@ li {
   font-size: 35px;
 }
 .navbar-container #hamburger:hover {
-  color: #e38443;
+  color: #e09a6c;
 }
 .navbar-container .logo-container {
   display: flex;
@@ -39,7 +69,7 @@ li {
   position: absolute;
 }
 .navbar-container .surname {
-  color: #e38443;
+  color: #e09a6c;
   font-weight: bold;
 }
 .navbar-container .navbar {
@@ -50,12 +80,13 @@ li {
   font-size: 45px;
 }
 .navbar-container .navbar .logo {
-  color: #e38443;
+  color: #e09a6c;
   font-size: 40px;
   padding: 5px;
   margin-right: 5px;
 }
 
+/* hero section */
 .home-hero {
   background: url("../../docs//img/hero.jpg");
   background-repeat: no-repeat;
@@ -64,12 +95,17 @@ li {
   height: 100vh;
   position: relative;
   width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .home-hero .home-hero-component {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .home-hero .home-icons {
   text-align: center;
@@ -86,11 +122,10 @@ li {
   text-align: center;
 }
 .home-hero h1 {
-  font-size: 30px;
   text-align: center;
 }
 .home-hero h2 {
-  color: #e38443;
+  color: #e09a6c;
 }
 .home-hero h1:nth-child(2) {
   text-align: center;
@@ -103,7 +138,7 @@ li {
   text-align: center;
 }
 .home-hero article a {
-  background: #e38443;
+  background: #e09a6c;
   color: #1f1f1f;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -112,7 +147,11 @@ li {
   border: 1px solid black;
   box-shadow: 2px 2px 2px #212020;
 }
-.home-hero section {
+.home-hero article a:hover {
+  background-color: #1f1f1f;
+  color: #e6e6e6;
+}
+.home-hero .container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -126,6 +165,7 @@ li {
   justify-content: space-around;
 }
 
+/* intro and photo*/
 .intro {
   display: flex;
   margin: 30px 10px;
@@ -149,8 +189,12 @@ footer {
     height: 50vh;
   }
 
+  .home-icons a i {
+    font-size: 50px;
+    padding: 20px;
+  }
   .home-icons a i:hover {
-    color: #e38443;
+    color: #e09a6c;
   }
 
   .intro {
@@ -169,6 +213,9 @@ footer {
     align-items: center;
     flex-direction: row;
   }
+  .navbar .sidePanel:active {
+    color: #e09a6c;
+  }
   .navbar .sidePanel li {
     margin-right: 50px;
   }
@@ -178,7 +225,7 @@ footer {
     font-size: 20px;
   }
   .navbar .sidePanel li a:hover {
-    color: #e38443;
+    color: #e09a6c;
   }
   .navbar .sidePanel .closebtn {
     display: none;
@@ -191,7 +238,20 @@ footer {
     position: relative;
   }
 }
-@media (min-width: 481px) and (max-width: 960px) {
+/* tablet screen */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   .navbar .sidePanel li {
     margin-right: 10px;
     text-align: right;
@@ -204,12 +264,33 @@ footer {
     font-size: 18px;
   }
 }
-@media (max-width: 480px) {
+/* desktop screen */
+@media only screen and (min-width: 960px) {
+  footer {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+/* mobile screen side menu*/
+@media only screen and (max-width: 480px) {
   .sidePanel {
     display: none;
+    background-color: #1f1f1f;
+    color: #e6e6e6;
     flex-direction: column;
-    width: 100px;
-    height: 200px;
+    width: 200px;
+    height: 400px;
     position: absolute;
     z-index: 50;
     top: 20px;
@@ -217,9 +298,17 @@ footer {
   }
   .sidePanel li {
     padding: 5px;
+    margin: 5px 15px;
   }
   .sidePanel li a {
-    color: #e38443;
+    font-size: 18px;
+    color: #e6e6e6;
+  }
+  .sidePanel li a:hover {
+    color: #e09a6c;
+  }
+  .sidePanel li:hover {
+    color: #e09a6c;
   }
   .sidePanel .closebtn {
     align-self: flex-end;
